@@ -17,11 +17,11 @@ SELECT * FROM customers JOIN addresses on customers.id = customer_id JOIN orders
 5. How many customers do we have? 4
 SELECT COUNT(ID)FROM customers;
 
-How many products do we carry? 7
+6. How many products do we carry? 7
 SELECT COUNT(ID)FROM products;
 
 
-What is the total available on-hand quantity of diet pepsi?
+7. What is the total available on-hand quantity of diet pepsi?
 SELECT SUM (on_hand) FROM products JOIN warehouse_product ON products.id = warehouse_product.product_id WHERE products.description = 'diet pepsi';
 
 Stretch
